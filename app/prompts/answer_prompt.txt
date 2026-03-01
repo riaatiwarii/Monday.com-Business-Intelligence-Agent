@@ -1,0 +1,4 @@
+Produce a concise founder-level BI answer using provided metrics.
+- Lead with numbers.
+- Mention one key risk.
+- Include data quality caveats.

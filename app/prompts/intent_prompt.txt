@@ -1,0 +1,6 @@
+Extract:
+- metric focus (pipeline, execution, both)
+- boards needed (deals/work_orders)
+- filters (sector, owner_code, time range)
+
+Ask clarification if metric focus is unknown.
