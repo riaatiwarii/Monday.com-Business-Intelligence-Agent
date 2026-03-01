@@ -2,24 +2,6 @@ services:
   - type: web
     name: monday-bi-agent
     env: python
-    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     autoDeploy: true
-    envVars:
-      - key: MONDAY_API_TOKEN
-        sync: false
-      - key: MONDAY_API_VERSION
-        value: "2025-04"
-      - key: MONDAY_API_URL
-        value: "https://api.monday.com/v2"
-      - key: MONDAY_DEALS_BOARD_ID
-        value: "5026918665"
-      - key: MONDAY_WORK_ORDERS_BOARD_ID
-        value: "5026919284"
-      - key: OPENAI_API_KEY
-        sync: false
-      - key: OPENAI_MODEL
-        value: "gpt-4o-mini"
-      - key: APP_ENV
-        value: "prod"
